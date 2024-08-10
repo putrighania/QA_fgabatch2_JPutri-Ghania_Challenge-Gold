@@ -1,0 +1,1966 @@
+{
+	"info": {
+		"_postman_id": "07535350-2525-4b16-87d9-5a92ed54c172",
+		"name": "website",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37201936"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"name\": \"Binar Web\",\r\n    \"email\": \"binar.web@mail.com\",\r\n    \"password\": \"challenge1\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base.url}}users.json",
+					"host": [
+						"{{base.url}}users",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"name\": \"Binar Web\",\r\n    \"email\": \"binar.web@mail.com\",\r\n    \"password\": \"challenge1\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base.url}}users.json",
+							"host": [
+								"{{base.url}}users",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 09:38:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOTQxOTYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE3MjMxOTYzMzMsImV4cCI6MTcyNDQwNTkzMywianRpIjoiODRjOTlhNzAtNTA0NS00NmNjLTg3NDctZjMyYzllODc3ZjJhIn0.cz7u5g4qak60Z3BI8CRlzFeg4-q6nH2YGYacs3OP5uE"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"846d0ff95c1e1593878b9871bce2e033\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=cvay7RQOA7PBTRo7e%2Bj3hsYyfoocQMf11hUdF58rdKLZRYLf75W7uMMqVPpcFncod%2Fka1CUlMlxejNEXqKf8dyBc%2BFmyAK3IePZ9M7RzsaFoIfs0qlfOdCtLV8gD5FzeSoWxR%2B1crBpjo%2FH1euN9iSQgM6jITySrkRzBcP7%2FD04crjrIv0dKG3Ul30fa2opHleHknLwi%2BUXIikpYFlW7I0WCzGcJqiq02TIM8c3pEHN5rHb2Fqn4o2Kbb45ka06c3n6jBXThAPII7u5Hx237uP%2FWgZrjS6JPDlhxEzlCigqNvn4NCq7ts8VzReOKiGdUri1%2FWJWTVmUuV1rz9jl6XQ%3D%3D--ZdVc%2BiT4oXFDG0Hc--HuBtNS9CuqNDVfipgcIyxg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "13d0ad81-2f47-4de4-be0e-f0d77c5541ab"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.298059"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 194196,\n        \"name\": \"Binar Web\",\n        \"email\": \"binar.web@mail.com\",\n        \"phone_number\": null,\n        \"address\": null\n    },\n    \"session\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOTQxOTYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE3MjMxOTYzMzMsImV4cCI6MTcyNDQwNTkzMywianRpIjoiODRjOTlhNzAtNTA0NS00NmNjLTg3NDctZjMyYzllODc3ZjJhIn0.cz7u5g4qak60Z3BI8CRlzFeg4-q6nH2YGYacs3OP5uE\"\n    }\n}"
+				},
+				{
+					"name": "Registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"name\": \"Binar Web\",\r\n    \"email\": \"binar.web@mail.com\",\r\n    \"password\": \"challenge1\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base.url}}users.json",
+							"host": [
+								"{{base.url}}users",
+								"json"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 09:39:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "c2aa1d06-2842-4233-911e-3de76cb07eaf"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.284803"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": {\n        \"email\": [\n            \"has already been taken\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"email\": \"macy@grant.info\",\r\n    \"password\": \"challenge\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base.url}}users/sign_in.json",
+					"host": [
+						"{{base.url}}users"
+					],
+					"path": [
+						"sign_in.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sign In",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"macy@grant.info\",\r\n    \"password\": \"challenge1\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base.url}}users/sign_in.json",
+							"host": [
+								"{{base.url}}users"
+							],
+							"path": [
+								"sign_in.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 09:39:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOTQxOTYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE3MjMxOTYzODAsImV4cCI6MTcyNDQwNTk4MCwianRpIjoiYmViZGZmMWItYjIwOS00NTU2LTljZDMtMTAyYzMzMTA3ZGIyIn0.1rLlcB4QXFMl8bPlZTrqKg5f1JMrYJjPZAzSaCdUN3I"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"151e66cfdfabc1943ba5e801237098ca\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=FcCgXmM2rnC4F8BGMHIIEIKBEtDiLvZPQ1ktfUebtCm3Qo42vPifCHy0OASw74CGtsyv0Y7vKdCp3Ex8JdzZ5Urdgb9lsyI0Czu1BWQmgl%2FwKOmN3SCJZ4iR811Pd4g%2BtwE44WW7teaqfkBDj9TQ7RAcNrkCj7PW2vMea0ot0qMG8QP3FNLuZs5LvuJaTzZRqKaDi%2ByBT6PCy0m858pmiZeGPHF%2Fa7ROWjkTKHb3IFFrDrfKAOoGO8aXmm2KR5AvYFRp%2BKZvPnE8NClrf9HqC9WtHaBGx5cnN5U4uVsWJAjagzfxfXD%2B8spQTfryWlxLxW4hG0vycXYnQWw51wD%2BlA%3D%3D--qtYDgr25ED6kOvcc--lCbORdQkfSlAQQqeeUJniQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "bc7a1efe-e843-4ad0-9525-ea8013d15ce1"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.010421"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 194196,\n        \"name\": \"Binar Web\",\n        \"email\": \"binar.web@mail.com\",\n        \"phone_number\": null,\n        \"address\": null\n    },\n    \"session\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxOTQxOTYiLCJzY3AiOiJ1c2VyIiwiYXVkIjpudWxsLCJpYXQiOjE3MjMxOTYzODAsImV4cCI6MTcyNDQwNTk4MCwianRpIjoiYmViZGZmMWItYjIwOS00NTU2LTljZDMtMTAyYzMzMTA3ZGIyIn0.1rLlcB4QXFMl8bPlZTrqKg5f1JMrYJjPZAzSaCdUN3I\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "List Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base.url}}categories.json",
+					"host": [
+						"{{base.url}}categories",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base.url}}categories.json",
+							"host": [
+								"{{base.url}}categories",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 09:41:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5411b7f44637465231bc27d78e1bb8ca\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "66df84b1-017e-4ba9-979f-34be9b41e86f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.006418"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"categories\": [\n        {\n            \"id\": 1,\n            \"name\": \"Hobi\",\n            \"url\": \"https://secondhand.binaracademy.org/categories/1\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Kendaraan\",\n            \"url\": \"https://secondhand.binaracademy.org/categories/2\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Baju\",\n            \"url\": \"https://secondhand.binaracademy.org/categories/3\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Elektronik\",\n            \"url\": \"https://secondhand.binaracademy.org/categories/4\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Kesehatan\",\n            \"url\": \"https://secondhand.binaracademy.org/categories/5\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "List Categories (id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base.url}}categories/2.json",
+					"host": [
+						"{{base.url}}categories"
+					],
+					"path": [
+						"2.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Categories (id)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base.url}}categories/2.json",
+							"host": [
+								"{{base.url}}categories"
+							],
+							"path": [
+								"2.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 09:41:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"85b8e1d46837aee21c1c602ac6fe813b\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "6c122fcb-d0af-4dcf-af55-596b1c568c3a"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.006088"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"category\": {\n        \"id\": 2,\n        \"name\": \"Kendaraan\",\n        \"url\": \"https://secondhand.binaracademy.org/categories/2\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Offer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{bearer}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"offer\": {\r\n        \"price\": 1500000,\r\n        \"to_id\": 74,\r\n        \"product_id\": 57\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base.url}}offers.json",
+					"host": [
+						"{{base.url}}offers",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Offer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"offer\": {\r\n        \"price\": 50000,\r\n        \"to_id\": 4923,\r\n        \"product_id\": 771\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base.url}}offers.json",
+							"host": [
+								"{{base.url}}offers",
+								"json"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 10:18:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Location",
+							"value": "https://secondhand.binaracademy.org/offers/106226"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"efbfc1e42a6b681181d57396fdd89883\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=CAcAZNZo1WBfzKuaaCVZDOuq87JX8Rygwx0rUOYq16Whj6yG2Itw91RpDGLu19QZdHOp%2Bn%2FwBnSuJCWkar%2BjOlNkB1x%2BTpCu4OA9BW42pD0G37pwadGxwpwlUSjdLeP5pulcwEtMa7SyrUHJmDCEwi8retvJ6TZnTssn8mk8WsXm5FSMUKMie%2BA%2BeEGuUjHpkUOdrhzAWAWDU9Mu85MoNQZkmVXliafSN7oKlI9d4hqo7Ar2hS%2BnEqiJmfNuf9Xs2dTFNeCJOAAcaHl7ReVg0P%2Fqegsa6cZKjnumBJpweX3Pybr%2FL8NIjiV8HZL1BSDn2kwPQIPkgOIuXFmw6%2Be6pQ%3D%3D--1IZrcd%2BVcdzS2i%2Bf--k7phOVk92%2BqpD80Q1rqSqw%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "5d388ed1-cc76-4393-854a-c82d83165b8d"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.065470"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"offer\": {\n        \"id\": 106226,\n        \"price\": 50000,\n        \"status\": \"initiated\",\n        \"created_at\": \"2024-08-09T10:18:52.813Z\",\n        \"updated_at\": \"2024-08-09T10:18:52.813Z\",\n        \"product\": {\n            \"id\": 771,\n            \"name\": \"Toyota Kijang Innova\",\n            \"price\": 370000000,\n            \"description\": \"HItam, Baru\",\n            \"category_id\": 2,\n            \"user_id\": 4923,\n            \"created_at\": \"2023-03-17T08:20:38.457Z\",\n            \"updated_at\": \"2023-03-17T08:42:26.914Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/771.json\",\n            \"user\": {\n                \"id\": 4923,\n                \"name\": \"Binar QA\",\n                \"email\": \"tugas@gmail.com\",\n                \"phone_number\": \"+628122222222\",\n                \"address\": \"Jakarta\",\n                \"city\": {\n                    \"id\": 3,\n                    \"name\": \"Jakarta\"\n                },\n                \"avatar\": {\n                    \"filename\": \"tax.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdklVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8f35aea4cb3f039a824c152406656575abda611f/tax.png\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdmtVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--609f4283026d63dd2776fba74256e405f0939020\",\n                    \"filename\": \"innova.jpeg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdmtVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--609f4283026d63dd2776fba74256e405f0939020/innova.jpeg\"\n                }\n            ]\n        },\n        \"to\": {\n            \"id\": 4923,\n            \"name\": \"Binar QA\",\n            \"email\": \"tugas@gmail.com\",\n            \"phone_number\": \"+628122222222\",\n            \"address\": \"Jakarta\",\n            \"city\": {\n                \"id\": 3,\n                \"name\": \"Jakarta\"\n            },\n            \"avatar\": {\n                \"filename\": \"tax.png\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdklVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8f35aea4cb3f039a824c152406656575abda611f/tax.png\"\n            }\n        },\n        \"from\": {\n            \"id\": 194196,\n            \"name\": \"Binar Web\",\n            \"email\": \"binar.web@mail.com\",\n            \"phone_number\": \"081213141516\",\n            \"address\": \"Ciracas\",\n            \"city\": {\n                \"id\": 3,\n                \"name\": \"Jakarta\"\n            },\n            \"avatar\": {\n                \"filename\": \"images.jpeg\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNW8zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--964caac4c31a532d13c500847226a6b5d7236d8d/images.jpeg\"\n            }\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "List Offers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base.url}}users/{user_id}/offers.json",
+					"host": [
+						"{{base.url}}users"
+					],
+					"path": [
+						"{user_id}",
+						"offers.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Offer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base.url}}offers/{id}.json",
+					"host": [
+						"{{base.url}}offers"
+					],
+					"path": [
+						"{id}.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product[name]",
+							"value": "Gunting",
+							"description": "The name of the product",
+							"type": "text"
+						},
+						{
+							"key": "product[price]",
+							"value": "15000",
+							"description": "The price of the product.",
+							"type": "text"
+						},
+						{
+							"key": "product[description]",
+							"value": "Gunting Kertas",
+							"description": "A description of the product.",
+							"type": "text"
+						},
+						{
+							"key": "product[status]",
+							"value": "published",
+							"description": "Here's where you will choose either draft or published.",
+							"type": "text"
+						},
+						{
+							"key": "product[category_id]",
+							"value": "1",
+							"description": "The category ID.",
+							"type": "text"
+						},
+						{
+							"key": "product[images]",
+							"description": "If you need to, upload an image.\n",
+							"type": "file",
+							"src": "postman-cloud:///1ef56366-ddf2-4ce0-ae7c-94f5087cbf7a"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base.url}}products.json",
+					"host": [
+						"{{base.url}}products",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product[name]",
+									"value": "Stop Kontak",
+									"description": "The name of the product",
+									"type": "text"
+								},
+								{
+									"key": "product[price]",
+									"value": "25000",
+									"description": "The price of the product.",
+									"type": "text"
+								},
+								{
+									"key": "product[description]",
+									"value": "Stop kontak listrik tanam",
+									"description": "A description of the product.",
+									"type": "text"
+								},
+								{
+									"key": "product[status]",
+									"value": "draft",
+									"description": "Here's where you will choose either draft or published.",
+									"type": "text"
+								},
+								{
+									"key": "product[category_id]",
+									"value": "4",
+									"description": "The category ID.",
+									"type": "text"
+								},
+								{
+									"key": "product[images]",
+									"description": "If you need to, upload an image.\n",
+									"type": "file",
+									"src": "postman-cloud:///1ef56366-ddf2-4ce0-ae7c-94f5087cbf7a"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base.url}}products.json",
+							"host": [
+								"{{base.url}}products",
+								"json"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 10:16:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Location",
+							"value": "https://secondhand.binaracademy.org/products/133506"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9052f98c7a28e798e5066822a98e608b\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=wDvE%2BuxADMaAjL1JAUru%2FM0K0SyhkwcMAG1m1SgIiceyREknXHmuzQeSqn%2BPke7aFfrGMT%2FOgyxl2FTYy%2B4Zyn5J1ZAYz2Ol8W070Uh4CB1g%2BbIQUjYqCg%2Bd15wxQl2GIcp2WzKP66%2Fa%2BOmAvVMInDGj2cXpltV5dp%2BH42D6s0PrOh%2BXA6zij8WuD%2FfubqntIJLpQ%2BYxl8JLt7%2FZeDq8GK6xC9%2FtmpnlKjSOyFDDXTsdUDSIxonAOdttOMKbfjezDMozLwGgCiBP1DL4yHm2l%2BvVy29OL8rCE%2FPq6mN60mGMkMJ%2BJzHBgj19QDwlOPNFdAI9L5A08fQkK3gXTOx3NQ%3D%3D--ljLX%2BD4sP7u67TUs--UoGZKRsiyzP0we%2Fhib0e3w%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "139d52cf-2bf8-4614-8ccd-5150b3cfb421"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.030322"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"product\": {\n        \"id\": 133506,\n        \"name\": \"Stop Kontak\",\n        \"price\": 25000,\n        \"description\": \"Stop kontak listrik tanam\",\n        \"category_id\": 4,\n        \"user_id\": 194196,\n        \"created_at\": \"2024-08-09T10:16:01.745Z\",\n        \"updated_at\": \"2024-08-09T10:16:01.745Z\",\n        \"url\": \"https://secondhand.binaracademy.org/products/133506.json\",\n        \"user\": {\n            \"id\": 194196,\n            \"name\": \"Binar Web\",\n            \"email\": \"binar.web@mail.com\",\n            \"phone_number\": \"081213141516\",\n            \"address\": \"Ciracas\",\n            \"city\": {\n                \"id\": 3,\n                \"name\": \"Jakarta\"\n            },\n            \"avatar\": {\n                \"filename\": \"images.jpeg\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNW8zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--964caac4c31a532d13c500847226a6b5d7236d8d/images.jpeg\"\n            }\n        },\n        \"images\": []\n    }\n}"
+				},
+				{
+					"name": "Create Product Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product[name]",
+									"value": "Gunting",
+									"description": "The name of the product",
+									"type": "text"
+								},
+								{
+									"key": "product[price]",
+									"value": "25000",
+									"description": "The price of the product.",
+									"type": "text"
+								},
+								{
+									"key": "product[description]",
+									"value": "Gunting kertas",
+									"description": "A description of the product.",
+									"type": "text"
+								},
+								{
+									"key": "product[status]",
+									"value": "published",
+									"description": "Here's where you will choose either draft or published.",
+									"type": "text"
+								},
+								{
+									"key": "product[category_id]",
+									"value": "1",
+									"description": "The category ID.",
+									"type": "text"
+								},
+								{
+									"key": "product[images]",
+									"description": "If you need to, upload an image.\n",
+									"type": "file",
+									"src": "postman-cloud:///1ef563e1-b5d5-4fc0-8484-f6ea7650dfc9"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base.url}}products.json",
+							"host": [
+								"{{base.url}}products",
+								"json"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 10:57:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Location",
+							"value": "https://secondhand.binaracademy.org/products/133516"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"711cd561b38f6005b010d67134cc7a53\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=H5Bro3MtJ5o%2BH3Sef11cxFnI%2BiOV9MhayLP8QFPQ2QPQ75LR7lt0Jz2JnCWM5eaJ7CmTk4BJv5XK5d%2FDaPOZkQOQdf%2Fs4bsc1jkgQWCOAmv58QJjS8Hhcp5994DhpC3qbDnmwsf%2Fk%2BH7RzhxWCZzm1N2OaeHbpC2vMjXXqzKPT%2B%2Bp2YhnVlVZj3W9k%2FZo0FLmYBPXnVh14hb24hm3Y6q9iXYhmKMcnbqdHqyBQa2KnzgGfn0O%2BNVdBBcNlRSIFQ%2FcHxsgj4goZBTpdUl50wOjPQI%2B9zpFOGK43Rs%2BnRak2BpolExo6AlMEXbeEl5dyaEc9cbIM68kJhEbYkEFDvLp55JsncnpBrJny7dxrDz%2BDoYPLNc7X1nwr3FtOaW2jJRRKkXZMPD9koYY1pbHc7MciA%2F3Fnn%2BGstQenpoe%2F06X8HMKlZJDWeyrP%2FmnWRc5%2FA--wHhxGAryYRldxShC--mBcPixnWLZgejaYuKkaP%2Fg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "e31a1b61-04a8-4e0c-9e67-a656607f6829"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.030835"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"product\": {\n        \"id\": 133516,\n        \"name\": \"Gunting\",\n        \"price\": 25000,\n        \"description\": \"Gunting kertas\",\n        \"category_id\": 1,\n        \"user_id\": 194196,\n        \"created_at\": \"2024-08-09T10:57:05.842Z\",\n        \"updated_at\": \"2024-08-09T10:57:05.842Z\",\n        \"url\": \"https://secondhand.binaracademy.org/products/133516.json\",\n        \"user\": {\n            \"id\": 194196,\n            \"name\": \"Binar Web\",\n            \"email\": \"binar.web@mail.com\",\n            \"phone_number\": \"081213141516\",\n            \"address\": \"Ciracas\",\n            \"city\": {\n                \"id\": 3,\n                \"name\": \"Jakarta\"\n            },\n            \"avatar\": {\n                \"filename\": \"images.jpeg\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNW8zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--964caac4c31a532d13c500847226a6b5d7236d8d/images.jpeg\"\n            }\n        },\n        \"images\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "List Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base.url}}products.json",
+					"host": [
+						"{{base.url}}products",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base.url}}products.json",
+							"host": [
+								"{{base.url}}products",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 10:16:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"683e2b3df0ebc1ce2e80a52d872be14b\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=AgviBjK5oMRLHNvBuba%2FANGXuDfhUl%2BZjoyBO%2F1gYFjtLhy5Bwsd8X9YBTyp33npcKuLqOIfBGJgj3a4QozTLBeRt2yTm8ovcumku%2Fak%2Buni0eiQZMjicztDYR36F9fklmCTMKHQTWA8r5rzXSJ4bskgCqOm8cc12XW5buQnspof8PY9ZJz5PVn%2BJrT%2BqjaiTXzvwVTGfT1b7d1XcdDts8i16NXkOY1BVTRUO6skA%2BPyqyMKE59iNXb%2B9HN2bzxVG%2BApt%2FLzYSS5kLAl6d9wt2GdaBBXYeyPAFC6PhdxvXdoQwIDqgujAzf4Y0GlhHGCfoSjmIBtFnTpJ2WkCqgJtw%3D%3D--lWNkXxAMWt%2BwSFea--ZQ5zSxV9zeI1n%2F%2FJbwftMg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "fa30f647-c4b4-4b39-95ac-925d7a86b7f5"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.089832"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"page_next\": 2,\n        \"page_previous\": null,\n        \"page_size\": 10,\n        \"page_count\": 5536,\n        \"total\": 55351\n    },\n    \"products\": [\n        {\n            \"id\": 27,\n            \"name\": \"Anak orang\",\n            \"price\": 1000,\n            \"description\": \"Anak orang nemu di anime\",\n            \"category_id\": 2,\n            \"user_id\": 29,\n            \"created_at\": \"2023-03-06T15:13:17.792Z\",\n            \"updated_at\": \"2023-03-07T07:32:37.127Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/27.json\",\n            \"user\": {\n                \"id\": 29,\n                \"name\": \"Kobo\",\n                \"email\": \"very.mctavish@outlook.com\",\n                \"phone_number\": \"+62817412944\",\n                \"address\": \"jalan tupai terbang. meikarta\",\n                \"city\": {\n                    \"id\": 4,\n                    \"name\": \"Bandung\"\n                },\n                \"avatar\": {\n                    \"filename\": \"anyanya.jpg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYXc9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--64bd193073778a6cdc846c241f2f89711d441f39/anyanya.jpg\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYTg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d55c21f2bea1f33c62c7d02dd19de82bdd3bc131\",\n                    \"filename\": \"anyadog.jpg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYTg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d55c21f2bea1f33c62c7d02dd19de82bdd3bc131/anyadog.jpg\"\n                },\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYkE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--de90db16fec20a899e6273300718553689a0606e\",\n                    \"filename\": \"anyaaa.jpg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYkE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--de90db16fec20a899e6273300718553689a0606e/anyaaa.jpg\"\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Laptop\",\n            \"price\": 3500000,\n            \"description\": \"Laptop bekas pemakaian pribadi hanya 3 bulan, minat langsung nego aja gan.\",\n            \"category_id\": 4,\n            \"user_id\": 4,\n            \"created_at\": \"2023-01-04T02:23:47.687Z\",\n            \"updated_at\": \"2023-03-03T08:35:20.816Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/2.json\",\n            \"user\": {\n                \"id\": 4,\n                \"name\": \"clarke griffin\",\n                \"email\": \"blastiningrum@binar.co.id\",\n                \"phone_number\": \"0812213443553\",\n                \"address\": \"Jakarta\",\n                \"city\": {\n                    \"id\": 3,\n                    \"name\": \"Jakarta\"\n                },\n                \"avatar\": {\n                    \"filename\": \"5.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--18f8ee9bb33a8fd7fb53102edf7ee7b038b27f2f/5.png\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--61dab0ba21a744b230fcaedf8b814059b1464542\",\n                    \"filename\": \"L-19.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--61dab0ba21a744b230fcaedf8b814059b1464542/L-19.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 79,\n            \"name\": \"barang\",\n            \"price\": 788,\n            \"description\": \"jj\",\n            \"category_id\": 1,\n            \"user_id\": 94,\n            \"created_at\": \"2023-03-09T14:01:25.052Z\",\n            \"updated_at\": \"2023-03-09T15:33:43.210Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/79.json\",\n            \"user\": {\n                \"id\": 94,\n                \"name\": \"kk\",\n                \"email\": \"jj@gmail.com\",\n                \"phone_number\": \"0999\",\n                \"address\": \"jj\",\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Solo\"\n                },\n                \"avatar\": {\n                    \"filename\": \"pngwing.com.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa3NDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8b39ff45386abe1e9469ff56207194c4d0f2a416/pngwing.com.png\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBazRDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--627fc64d7c9622ecfc55ebda16751298ab187439\",\n                    \"filename\": \"pngwing.com (1).png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBazRDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--627fc64d7c9622ecfc55ebda16751298ab187439/pngwing.com%20(1).png\"\n                }\n            ]\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Hoodie \",\n            \"price\": 0,\n            \"description\": \"Hoodie baru\",\n            \"category_id\": 3,\n            \"user_id\": 19,\n            \"created_at\": \"2023-03-06T12:50:14.801Z\",\n            \"updated_at\": \"2023-03-13T04:00:25.264Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/15.json\",\n            \"user\": {\n                \"id\": 19,\n                \"name\": \"Atalla Satrio\",\n                \"email\": \"johndoe@gmail.com\",\n                \"phone_number\": \"adawdawd\",\n                \"address\": \"2wqeq2e\",\n                \"city\": {\n                    \"id\": 2,\n                    \"name\": \"Jogja\"\n                },\n                \"avatar\": {\n                    \"filename\": \"Screenshot_1.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBjUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2cccfd6dae50260c900c2a2de963e3531f66153b/Screenshot_1.png\"\n                }\n            },\n            \"images\": []\n        },\n        {\n            \"id\": 771,\n            \"name\": \"Toyota Kijang Innova\",\n            \"price\": 370000000,\n            \"description\": \"HItam, Baru\",\n            \"category_id\": 2,\n            \"user_id\": 4923,\n            \"created_at\": \"2023-03-17T08:20:38.457Z\",\n            \"updated_at\": \"2023-03-17T08:42:26.914Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/771.json\",\n            \"user\": {\n                \"id\": 4923,\n                \"name\": \"Binar QA\",\n                \"email\": \"tugas@gmail.com\",\n                \"phone_number\": \"+628122222222\",\n                \"address\": \"Jakarta\",\n                \"city\": {\n                    \"id\": 3,\n                    \"name\": \"Jakarta\"\n                },\n                \"avatar\": {\n                    \"filename\": \"tax.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdklVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8f35aea4cb3f039a824c152406656575abda611f/tax.png\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdmtVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--609f4283026d63dd2776fba74256e405f0939020\",\n                    \"filename\": \"innova.jpeg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdmtVIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--609f4283026d63dd2776fba74256e405f0939020/innova.jpeg\"\n                }\n            ]\n        },\n        {\n            \"id\": 57,\n            \"name\": \"Kucing Himalaya\",\n            \"price\": 1300000,\n            \"description\": \"The Himalayan, is a breed or sub-breed of long-haired cat similar in type to the Persian, with the exception of its blue eyes and its point colouration, which were derived from crossing the Persian with the Siamese.\",\n            \"category_id\": 1,\n            \"user_id\": 74,\n            \"created_at\": \"2023-03-09T04:18:26.127Z\",\n            \"updated_at\": \"2023-03-09T08:41:23.292Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/57.json\",\n            \"user\": {\n                \"id\": 74,\n                \"name\": \"Kucing\",\n                \"email\": \"joluqezi@brand-app.biz\",\n                \"phone_number\": \"081332843474\",\n                \"address\": \"Jalan Jakarta\",\n                \"city\": {\n                    \"id\": 3,\n                    \"name\": \"Jakarta\"\n                },\n                \"avatar\": {\n                    \"filename\": \"jenis-jenis-kucing-peliharaan-12.jpeg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbThCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f3a7fcb3f898a3c6f47fa5cb1d014b855ef74f84/jenis-jenis-kucing-peliharaan-12.jpeg\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc2NCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21a80c41a93b7ecf7794d7f8c03ff90b48f9b1b9\",\n                    \"filename\": \"Kucing_Persia_Himalaya.jpg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc2NCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21a80c41a93b7ecf7794d7f8c03ff90b48f9b1b9/Kucing_Persia_Himalaya.jpg\"\n                },\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc29CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ab20222c5317559c3f6bd505e43305c0776d7b95\",\n                    \"filename\": \"jenis-jenis-kucing-peliharaan-12.jpeg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc29CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ab20222c5317559c3f6bd505e43305c0776d7b95/jenis-jenis-kucing-peliharaan-12.jpeg\"\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Supra Bapak\",\n            \"price\": 7000000,\n            \"description\": \"Tipe Mesin: 4-Langkah, SOHC, Silinder Tunggal\\r\\nKapasitas Mesin: 124,89 cc\\r\\nSistem Suplai Bahan Bakar: PGM-FI (Programmed Fuel Injection)\\r\\nDiameter X Langkah: 52,4 x 57,9 mm\\r\\nTipe Tranmisi: 4 Speed, Rotary\\r\\nRasio Kompresi: 9,3:1\\r\\nDaya Maksimum: 7,40 kW (10,1 PS) / 8.000 rpm\\r\\nTorsi Maksimum: 9,30 Nm (0,95 kgf.m) / 4.000 rpm\\r\\nTipe Starter: Starter Kaki dan Elektrik\\r\\nTipe Kopling: Multiplate Wet Clutch with Coil Spring\\r\\nSistem Pendingin Mesin: Pendingin Udara\\r\\nPola Perpindahan Gigi: N-1-2-3-4-N\",\n            \"category_id\": 2,\n            \"user_id\": 1,\n            \"created_at\": \"2023-01-04T06:49:43.559Z\",\n            \"updated_at\": \"2023-03-06T13:48:09.689Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/3.json\",\n            \"user\": {\n                \"id\": 1,\n                \"name\": \"Fikri Rahmat Nurhidayat\",\n                \"email\": \"fnurhidayat@binar.co.id\",\n                \"phone_number\": \"+6282227673781\",\n                \"address\": \"Jl. Arjuna I B38\",\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Solo\"\n                },\n                \"avatar\": {\n                    \"filename\": \"Mr.House.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e970b28380f4faea3cc9440034b1d7617bd45c4e/Mr.House.png\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3afa565d5f7e332c6df6f69a4ddc0de0606a15c5\",\n                    \"filename\": \"Supra.jpg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBKUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3afa565d5f7e332c6df6f69a4ddc0de0606a15c5/Supra.jpg\"\n                }\n            ]\n        },\n        {\n            \"id\": 20,\n            \"name\": \"testiiinnggg\",\n            \"price\": 5000,\n            \"description\": \"hanyaa testing\",\n            \"category_id\": 2,\n            \"user_id\": 22,\n            \"created_at\": \"2023-03-06T13:19:41.495Z\",\n            \"updated_at\": \"2023-03-06T14:27:15.346Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/20.json\",\n            \"user\": {\n                \"id\": 22,\n                \"name\": \"3334234\",\n                \"email\": \"testinglurrr@gmail.com\",\n                \"phone_number\": \"asdasd\",\n                \"address\": \"dfgdfgdfg\",\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Solo\"\n                },\n                \"avatar\": {\n                    \"filename\": \"ezgif.com-gif-maker.jpg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBmUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--594b1de0568f628d14fafa2bbcd512e74cb0f181/ezgif.com-gif-maker.jpg\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBWDg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--99c593b163fcea6d09ea87150ea92d0c52739363\",\n                    \"filename\": \"ezgif.com-gif-maker.jpg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBWDg9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--99c593b163fcea6d09ea87150ea92d0c52739363/ezgif.com-gif-maker.jpg\"\n                }\n            ]\n        },\n        {\n            \"id\": 26,\n            \"name\": \"Wallpaper Win11\",\n            \"price\": 50000,\n            \"description\": \"Ini adalah wallpaper windows 11 keren\",\n            \"category_id\": 4,\n            \"user_id\": 27,\n            \"created_at\": \"2023-03-06T15:11:40.135Z\",\n            \"updated_at\": \"2023-03-06T15:15:06.990Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/26.json\",\n            \"user\": {\n                \"id\": 27,\n                \"name\": \"wallpaper windows 11\",\n                \"email\": \"ucok4321@gmail.com\",\n                \"phone_number\": \"08123456789\",\n                \"address\": \"Jl.in aja dulu\",\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Solo\"\n                },\n                \"avatar\": {\n                    \"filename\": \"Inspirational Light.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBWlk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--29d7e0ec0305f86e921fb9fb3ef6c762c3ef4412/Inspirational%20Light.png\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYUU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d93f60bd1addb1bcaeddb9148f7f999d559790df\",\n                    \"filename\": \"Inspirational Light.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYUU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d93f60bd1addb1bcaeddb9148f7f999d559790df/Inspirational%20Light.png\"\n                },\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYUk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4427ae32634597aa21b836d88d0004af831ac1d5\",\n                    \"filename\": \"Inspirational Dark.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYUk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4427ae32634597aa21b836d88d0004af831ac1d5/Inspirational%20Dark.png\"\n                },\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYU09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce2654aadf9b36b26a7999aa9fb432ba88ca45ae\",\n                    \"filename\": \"Inspirational Light.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYU09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce2654aadf9b36b26a7999aa9fb432ba88ca45ae/Inspirational%20Light.png\"\n                },\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYVE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--be43712debd3d50e674cc78cf893a1b084f0bfe1\",\n                    \"filename\": \"Inspirational Dark.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYVE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--be43712debd3d50e674cc78cf893a1b084f0bfe1/Inspirational%20Dark.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 1567,\n            \"name\": \"mobil\",\n            \"price\": 1.2e+55,\n            \"description\": \"mobil sultan\",\n            \"category_id\": 2,\n            \"user_id\": 4550,\n            \"created_at\": \"2023-03-31T15:57:18.274Z\",\n            \"updated_at\": \"2023-03-31T16:03:01.602Z\",\n            \"url\": \"https://secondhand.binaracademy.org/products/1567.json\",\n            \"user\": {\n                \"id\": 4550,\n                \"name\": \"bbbb@$@$$@$\",\n                \"email\": \"bb@bb\",\n                \"phone_number\": \"hhghjgjhg777iuhukhjkbjn\",\n                \"address\": \"Jl. Tanah Tinggi, Bandung\",\n                \"city\": {\n                    \"id\": 2,\n                    \"name\": \"Jogja\"\n                },\n                \"avatar\": {\n                    \"filename\": \"SummaryPage.png\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2NJIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0f962abef0f2c09807604ee2a92e720d37248a68/SummaryPage.png\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0299bca735e7568813a995cd6f2f5a8ba212e062\",\n                    \"filename\": \"Foto Mobil Sport Terbaru 2014.jpg\",\n                    \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGtxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0299bca735e7568813a995cd6f2f5a8ba212e062/Foto%20Mobil%20Sport%20Terbaru%202014.jpg\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base.url}}products/133506.json",
+					"host": [
+						"{{base.url}}products"
+					],
+					"path": [
+						"133506.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base.url}}products/133506.json",
+							"host": [
+								"{{base.url}}products"
+							],
+							"path": [
+								"133506.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 10:16:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9052f98c7a28e798e5066822a98e608b\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=2E2Ue85xwDjbq2SJZmIF%2FwunmAfaGsJNlvg5tgflzLGUfoTVtS6LfFNOl25NerJWZzIrlowgkzoMHFqykPCAD44Ex2Gl8Yym7xEK1YbvvJlLKrsk1aNzo%2BXuBV7Wqkp96wVGdmY8k1xpDEzKLUMC1UfaKssQKZz5Wl9vnh0x7QcFTdG59A8fOVisohYQ9O8rJrcujdwqBjrIA3ptl9vHCRYGOV1cpjA7bOaBT5fJHledIif2ppIWtmDbA3hhDLVGgTLqRCfRrcXtT5%2FifqWzouBx43KIR%2FMqOavn9hOQcHbnIFBfVl9zhtAVFvyrrb0MJUrCsS8nkHvfg5aOUNfv2g%3D%3D--QgHTP0jHRu7RxFCK--Rb36%2FrVZjul0keD%2FsRIhHg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "52609533-aa4f-4f7e-bd68-964fc3bed869"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.022529"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"product\": {\n        \"id\": 133506,\n        \"name\": \"Stop Kontak\",\n        \"price\": 25000,\n        \"description\": \"Stop kontak listrik tanam\",\n        \"category_id\": 4,\n        \"user_id\": 194196,\n        \"created_at\": \"2024-08-09T10:16:01.745Z\",\n        \"updated_at\": \"2024-08-09T10:16:01.745Z\",\n        \"url\": \"https://secondhand.binaracademy.org/products/133506.json\",\n        \"user\": {\n            \"id\": 194196,\n            \"name\": \"Binar Web\",\n            \"email\": \"binar.web@mail.com\",\n            \"phone_number\": \"081213141516\",\n            \"address\": \"Ciracas\",\n            \"city\": {\n                \"id\": 3,\n                \"name\": \"Jakarta\"\n            },\n            \"avatar\": {\n                \"filename\": \"images.jpeg\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNW8zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--964caac4c31a532d13c500847226a6b5d7236d8d/images.jpeg\"\n            }\n        },\n        \"images\": []\n    }\n}"
+				},
+				{
+					"name": "Get Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base.url}}products/133516.json",
+							"host": [
+								"{{base.url}}products"
+							],
+							"path": [
+								"133516.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 10:57:46 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"711cd561b38f6005b010d67134cc7a53\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=3zhPPNbLrh5JxNVqKbf4AJbe%2BscA%2BBeRgGFOqOjlw5DqcNxomYKccifL%2BtrXGrcDrHscRws%2FsLUT44Yal70Kk%2BrhmcF1MCaeeoNh5ojj80YtLOtL7yoX3HHiQv395plwiB2z6yWoaSpVr16A7Q30xm93y0ulJ0pzHnB0qCIkNEWhQGuSl%2Be%2F0H04RS4CtMC9lOX466oFkbFxjr%2BPEQ%2BBUvQTmuU9%2FBkJpbks0m%2Fcd9HBco4Nqkk1xZli0FwN7MNcN1W6bhE1TeFX9mJAp9IbuCWiGrucC3Ceu97WbpT%2BvB%2FIGbQT%2FBtALzSK%2B6vjgTX%2B0Y27CJjByAn%2By5z22dZ3bKOE%2FdJCP1cJ0EQA%2FbCOwDGUicyrHEHfY%2FIb70OO9vWIfNswgmCj1tXFApQ1tYp86Axv2jbuSqFpu7D2q8iYHHwkJul%2FXfsdmL1RumXSd8rV--droBselmpEobvOll--DLBDr4p9NJKPctd9H0Q9iQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "217734e9-b945-45d2-88d4-cd7a486bdd40"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.069379"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"product\": {\n        \"id\": 133516,\n        \"name\": \"Gunting\",\n        \"price\": 25000,\n        \"description\": \"Gunting kertas\",\n        \"category_id\": 1,\n        \"user_id\": 194196,\n        \"created_at\": \"2024-08-09T10:57:05.842Z\",\n        \"updated_at\": \"2024-08-09T10:57:05.842Z\",\n        \"url\": \"https://secondhand.binaracademy.org/products/133516.json\",\n        \"user\": {\n            \"id\": 194196,\n            \"name\": \"Binar Web\",\n            \"email\": \"binar.web@mail.com\",\n            \"phone_number\": \"081213141516\",\n            \"address\": \"Ciracas\",\n            \"city\": {\n                \"id\": 3,\n                \"name\": \"Jakarta\"\n            },\n            \"avatar\": {\n                \"filename\": \"images.jpeg\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNW8zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--964caac4c31a532d13c500847226a6b5d7236d8d/images.jpeg\"\n            }\n        },\n        \"images\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base.url}}products/{id}.json",
+					"host": [
+						"{{base.url}}products"
+					],
+					"path": [
+						"{id}.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product[name]",
+									"value": "Stop Kontak",
+									"type": "text"
+								},
+								{
+									"key": "product[price]",
+									"value": "30000",
+									"type": "text"
+								},
+								{
+									"key": "product[description]",
+									"value": "Stop kontak listrik tanam",
+									"type": "text"
+								},
+								{
+									"key": "product[status]",
+									"value": "published",
+									"type": "text"
+								},
+								{
+									"key": "product[category_id]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "product[images][]",
+									"type": "file",
+									"src": "postman-cloud:///1ef56366-ddf2-4ce0-ae7c-94f5087cbf7a"
+								},
+								{
+									"key": "product[persisted_images][]",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base.url}}products/133506.json",
+							"host": [
+								"{{base.url}}products"
+							],
+							"path": [
+								"133506.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 10:55:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Location",
+							"value": "https://secondhand.binaracademy.org/products/133506"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c7532a8e8a40287b17a5b8d924be7ad6\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=4Ov0jCkhVa7tewNJwBOVhYhWo3GxZRIjpFCPSFao6618JzoCOe1F3YoatllJ4xWmK12LsS2u7qDdIgOK0qeC1QwPuk8F00ZNm387rCiaiKj1oQLFgwbgvIcllVC7oU2IrIzroCZvHs3CVOIP%2Fmu1p0EbIe%2FKxJDw7GzUKEV4LOsYjKjAg7PVYVLI7CSDGIA9qSXHlMdld%2BF%2Bgr25F22PLLfq%2BCxG4P%2FmSOd5D5LQRZlpxHQBrNUXLsrFIQtGiuXa61MWp38wwbgZGE%2F650vw%2BP3OfQS3TUvto4h7j4aohBbDRiACdfHCiqolLQfv%2BOs4w0PPKMq7NogpWA%2FB1RDc98dm%2B9%2B7kQNrXl3TRJ3KiugYibB4hPWbTJ8aUhZwbGO5Kd%2B5b427FiECyreuSO%2FrQ7OYjjzoXISISuDVQ0qkpAbIiOomKCpzVhw8%2FONuSbfI--phvCBKjhbaNbf6gb--qZ%2FXIhOROni0lRHYzoxOUg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "7be7c349-c5de-46f3-9da9-94114a094e77"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.641870"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"product\": {\n        \"id\": 133506,\n        \"name\": \"Stop Kontak\",\n        \"price\": 30000,\n        \"description\": \"Stop kontak listrik tanam\",\n        \"category_id\": 4,\n        \"user_id\": 194196,\n        \"created_at\": \"2024-08-09T10:16:01.745Z\",\n        \"updated_at\": \"2024-08-09T10:55:41.671Z\",\n        \"url\": \"https://secondhand.binaracademy.org/products/133506.json\",\n        \"user\": {\n            \"id\": 194196,\n            \"name\": \"Binar Web\",\n            \"email\": \"binar.web@mail.com\",\n            \"phone_number\": \"081213141516\",\n            \"address\": \"Ciracas\",\n            \"city\": {\n                \"id\": 3,\n                \"name\": \"Jakarta\"\n            },\n            \"avatar\": {\n                \"filename\": \"images.jpeg\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNW8zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--964caac4c31a532d13c500847226a6b5d7236d8d/images.jpeg\"\n            }\n        },\n        \"images\": [\n            {\n                \"id\": \"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK00zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--bf1f9ceed171757a377dfd9919a75a6fd1dcc7b1\",\n                \"filename\": \"stopkontak.jpeg\",\n                \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK00zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--bf1f9ceed171757a377dfd9919a75a6fd1dcc7b1/stopkontak.jpeg\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base.url}}products/{id}.json",
+					"host": [
+						"{{base.url}}products"
+					],
+					"path": [
+						"{id}.json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Product",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base.url}}products/133516.json",
+							"host": [
+								"{{base.url}}products"
+							],
+							"path": [
+								"133516.json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 10:58:48 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Link",
+							"value": "</assets/application-8719702cfbda8df80ef05ec97d6e3439f691b635cf6f90772d44af13d07cdc5f.css>; rel=preload; as=style; nopush"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"dcb406aa8d4de9902d1010b78d07d91c\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=oNqGSg41ih0FXnz7QPZTZi7vtRfrlv3mOxgiLgi8SQUvLnIoX7eMFueEsdg%2BPlISK5goB8EeltxlAFHOfqpzEGjTzgSHIW3XKV75TZWWS2m0F05KwtHhCi1%2B4GEmAZOgTbSLX4pAssWYiaP5zbgj5U%2Bg5ZwxZPbIIr%2Fml%2FZeke3wzBeszcdI%2F%2BaDsaUQxu4pGtp3%2FZ%2BS%2Bs7md8LLLlM8YKrAW65UUz0LUSBCx5V7bCtZXVuqo97y%2F4YgKotFYuHG5i5ErUvjmfnxrio6kzYXTgvzG4YIcRq4J3TmObA85ImKMPy9EYmLYYuWrWyoLyFa1GtOXJHIqERk1Vw%2Fe1WJwSfUZt%2B%2F%2BQmE4vI4gi%2BNywIeEw1ixTnzeu5Fq0SOUaXH5%2BaGrGSV4InapBsfgNhEPva6x74PSCGYB08MqAVqhIXHBHQV6lQEkVbh6gB%2FGcuM--qtN8eIOrt7KqIS5W--%2BvziHCjcgo0%2BBsS2cf4X0Q%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "2f8d34ee-1a12-4264-9bc6-f779c8e13671"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.198359"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html>\n    <head>\n        <title>SecondHand</title>\n        <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n        <meta name=\"csrf-param\" content=\"authenticity_token\" />\n        <meta name=\"csrf-token\" content=\"60CFZJcwFNVzLP6OMu6F98AurOkMUlaKMTH25Xdkx59zldaSFGIkUNjfFXXbfXCHILRLTBq0yE-z5jabFyINpg\" />\n        <link rel=\"stylesheet\" href=\"/assets/application-8719702cfbda8df80ef05ec97d6e3439f691b635cf6f90772d44af13d07cdc5f.css\" media=\"all\" data-turbo-track=\"reload\" />\n        <script src=\"/assets/application-129503345137b5d28c19109dabc42b97ed2206ca1c50e66a68eac5b5353990e4.js\" data-turbo-track=\"reload\" defer=\"defer\"></script>\n    </head>\n    <body>\n        <nav class=\"navbar navbar-expand-lg navbar-light bg-white shadow fixed-top\">\n            <div class=\"container\">\n                <a class=\"navbar-brand px-5 py-3\" href=\"/\"></a>\n                <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                    <span class=\"navbar-toggler-icon\"></span>\n                </button>\n                <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n                    <form class=\"d-flex ms-0 ms-lg-4 my-4 my-lg-0\" method=\"GET\" action=\"/\" role=\"search\">\n                        <div class=\"input-group rounded-pill bg-light p-1 search\">\n                            <input name=\"q\" class=\"form-control bg-transparent border-0 form-search\" type=\"search\" placeholder=\"Cari di sini ...\" aria-label=\"Search\" value=\"\">\n                            <i class=\"bi bi-search input-group-text bg-transparent border-0\"></i>\n                        </div>\n                    </form>\n                    <div class=\"ms-auto\">\n                        <ul class=\"navbar-nav\">\n                            <li class=\"nav-item me-0 me-lg-2 fs-5\" aria-current=\"page\">\n                                <a class=\"nav-link d-flex align-items-center \" href=\"/products\">\n                                    <i class=\"bi bi-list-ul me-4 me-lg-0\"></i>\n                                    <span class=\"d-block d-lg-none fs-6\">Produk Saya</span>\n                                </a>\n                            </li>\n                            <li class=\"nav-item me-0 me-lg-2 fs-5 d-block d-xl-none position-relative\">\n                                <a class=\"nav-link d-flex align-items-center\" href=\"/notifications\">\n                                    <i class=\"bi bi-bell me-4 me-lg-0\"></i>\n                                    <span class=\"d-block d-lg-none fs-6\">Notifikasi</span>\n                                    <span class=\"position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle\">\n                                        <span class=\"visually-hidden\">New alerts</span>\n                                    </span>\n                                </a>\n                            </li>\n                            <li class=\"nav-item dropdown me-0 me-lg-2 fs-5 d-none d-xl-block position-relative\">\n                                <a class=\"nav-link dropdown-toggle position-relative\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\">\n                                    <i class=\"bi bi-bell\"></i>\n                                    <span class=\"position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle\">\n                                        <span class=\"visually-hidden\">New alerts</span>\n                                    </span>\n                                </a>\n                                <ul class=\"dropdown-menu notification-dropdown-menu px-4\">\n                                    <li>\n                                        <a class=\"notification my-4 px-2 position-relative\" data-notification-id=\"222414\" data-notification-read=\"false\" href=\"/products/133516\">\n                                            <img class=\"notification-image rounded-4 overflow-hidden me-4\" src=\"/empty-image.svg\" />\n                                            <div class=\"notification-body me-4\">\n                                                <div class=\"notification-subject fs-6 text-black-50\">Berhasil di terbitkan</div>\n                                                <div class=\"notification-body fs-5\">Gunting\n                                                    <br>Rp 25.000\n                                                </div>\n                                            </div>\n                                            <div class=\"notification-timestamp fs-6 text-black-50\">09 Aug, 17:57</div>\n                                            <span class=\"position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle\">\n                                                <span class=\"visually-hidden\">New alerts</span>\n                                            </span>\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <hr class=\"dropdown-divider\">\n                                    </li>\n                                    <li>\n                                        <a class=\"notification my-4 px-2 position-relative\" data-notification-id=\"222413\" data-notification-read=\"false\" href=\"/products/133506\">\n                                            <img class=\"notification-image rounded-4 overflow-hidden me-4\" src=\"/empty-image.svg\" />\n                                            <div class=\"notification-body me-4\">\n                                                <div class=\"notification-subject fs-6 text-black-50\">Berhasil di terbitkan</div>\n                                                <div class=\"notification-body fs-5\">Stop Kontak\n                                                    <br>Rp 30.000\n                                                </div>\n                                            </div>\n                                            <div class=\"notification-timestamp fs-6 text-black-50\">09 Aug, 17:55</div>\n                                            <span class=\"position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle\">\n                                                <span class=\"visually-hidden\">New alerts</span>\n                                            </span>\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <hr class=\"dropdown-divider\">\n                                    </li>\n                                    <li>\n                                        <a class=\"notification my-4 px-2 position-relative\" data-notification-id=\"222411\" data-notification-read=\"false\" href=\"/products/133514\">\n                                            <img class=\"notification-image rounded-4 overflow-hidden me-4\" src=\"/empty-image.svg\" />\n                                            <div class=\"notification-body me-4\">\n                                                <div class=\"notification-subject fs-6 text-black-50\">Berhasil di terbitkan</div>\n                                                <div class=\"notification-body fs-5\">Stop Kontak\n                                                    <br>Rp 25.000\n                                                </div>\n                                            </div>\n                                            <div class=\"notification-timestamp fs-6 text-black-50\">09 Aug, 17:50</div>\n                                            <span class=\"position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle\">\n                                                <span class=\"visually-hidden\">New alerts</span>\n                                            </span>\n                                        </a>\n                                    </li>\n                                    <li class=\"p-2 text-center\">\n                                        <a class=\"btn btn-link text-decoration-none\" href=\"/notifications\">\n                Lihat semua notifikasi\n</a>\n                                    </li>\n                                </ul>\n                            </li>\n                            <li class=\"nav-item fs-5 d-block d-lg-none\">\n                                <a class=\"nav-link d-flex align-items-center\" href=\"/profiles\">\n                                    <i class=\"bi bi-person me-4 me-lg-0\"></i>\n                                    <span class=\"d-block d-lg-none fs-6\">Profil Saya</span>\n                                </a>\n                            </li>\n                            <li class=\"nav-item fs-5 d-block d-lg-none\">\n                                <form action=\"/users/sign_out\" accept-charset=\"UTF-8\" method=\"post\">\n                                    <input type=\"hidden\" name=\"_method\" value=\"delete\" autocomplete=\"off\" />\n                                    <input type=\"hidden\" name=\"authenticity_token\" value=\"jucw1raKReSu0ga5QLTxTAU05dUhGnXD8PezF_LbbLBDF95-gebIQWuK45ACXyNi70iJDM4VqmzmoXwOz4suhg\" autocomplete=\"off\" />\n                                    <button name=\"button\" type=\"submit\" class=\"nav-link btn btn-link btn-sm text-decoration-none fs-5 logout-button\">\n                                        <i class=\"bi bi-arrow-bar-left me-3\"></i>\n                                        <span class=\"fs-6\">Keluar</span>\n                                    </button>\n                                </form>\n                            </li>\n                            <li class=\"nav-item dropdown fs-5 d-none d-lg-block\">\n                                <a class=\"nav-link dropdown-toggle d-flex align-items-center\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\">\n                                    <i class=\"bi bi-person me-4 me-lg-0\"></i>\n                                    <span class=\"d-block d-lg-none fs-6\">Profil Saya</span>\n                                </a>\n                                <ul class=\"dropdown-menu\">\n                                    <li>\n                                        <a class=\"nav-user\" href=\"/profiles\">\n                                            <div class=\"d-flex align-items-center justify-content center flex-column py-2\">\n                                                <img class=\"img-avatar w-100 rounded-4 mb-2\" src=\"https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNW8zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--964caac4c31a532d13c500847226a6b5d7236d8d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hSeVpYTnBlbVZmZEc5ZmJHbHRhWFJiQjJrQ2tBRnBBcEFCIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--dad1ea9fd9c33e8a8e0e49b4c08b1d130563e04b/images.jpeg\" />\n                                                <div class=\"card-body text-center\">\n                                                    <div class=\"fs-5 fw-bold\">Binar</div>\n                                                    <div class=\"fs-6 text-black-50\">Jakarta</div>\n                                                </div>\n                                            </div>\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <hr class=\"dropdown-divider\">\n                                    </li>\n                                    <li>\n                                        <form action=\"/users/sign_out\" accept-charset=\"UTF-8\" method=\"post\">\n                                            <input type=\"hidden\" name=\"_method\" value=\"delete\" autocomplete=\"off\" />\n                                            <input type=\"hidden\" name=\"authenticity_token\" value=\"qKMqlwYBH85YEmbcbSTEkmThnA28g3bxVkH6fKFjltFlU8Q_MW2Sa51Kg_Uvzxa8jp3w1FOMqV5AFzVlnDPU5w\" autocomplete=\"off\" />\n                                            <button name=\"button\" type=\"submit\" class=\"btn btn-link text-decoration-none\">\n                                                <i class=\"bi bi-arrow-bar-left me-3\"></i>\n            Keluar\n                                            </button>\n                                        </form>\n                                    </li>\n                                </ul>\n                            </li>\n                        </ul>\n                        <!-- TODO: Move this somewhere convinient -->\n                        <script>\n  var notifications = document.querySelectorAll(\"a.notification\")\n\n  notifications.forEach((notification) => {\n    if (notification.dataset.notificationRead == \"false\") {\n      notification.addEventListener('click', async function () {\n        await fetch(`/notifications/${notification.dataset.notificationId}/read`, {\n          credentials: \"same-origin\",\n          method: \"PUT\"\n        });\n      });\n    }\n  })\n</script>\n                    </div>\n                </div>\n            </div>\n        </nav>\n        <section class=\"pt-5 mt-5\">\n            <section class=\"mt-lg-5 mb-5 w-100 d-flex gap-lg-5\">\n                <div class=\"promo left bg-success rounded-end flex-grow-1 align-self-center d-none d-lg-block\"></div>\n                <div class=\"promo center flex-grow-1 bg-warning rounded-lg-4 rounded-0\">\n                    <div class=\"row p-5\">\n                        <div class=\"col\">\n                            <h1 class=\"fw-bold mb-4\">Bulan Ramadhan\n                                <br>Banyak diskon!\n                            </h1>\n                            <h6 class=\"fs-5 fw-normal\" >Diskon Hingga</h6>\n                            <h5 class=\"display-6 text-danger fw-bold\">60%</h5>\n                        </div>\n                        <div class=\"col\">\n      </div>\n                    </div>\n                </div>\n                <div class=\"promo right bg-info rounded-start flex-grow-1 align-self-center d-none d-lg-block\"></div>\n            </section>\n            <section class=\"container\">\n                <h5 class=\"fw-bold mb-4\">Telusuri Kategori</h5>\n                <nav class=\"nav row gap-4 px-2 px-lg-0\">\n                    <a class=\"btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center active\" href=\"/\">\n                        <i class=\"bi bi-search me-3 fs-4\"></i>\n      Semua\n                    </a>\n                    <a class=\"btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center false\" href=\"/?category_id=1\">\n                        <i class=\"bi bi-search me-3 fs-4\"></i>\n        Hobi\n                    </a>\n                    <a class=\"btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center false\" href=\"/?category_id=2\">\n                        <i class=\"bi bi-search me-3 fs-4\"></i>\n        Kendaraan\n                    </a>\n                    <a class=\"btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center false\" href=\"/?category_id=3\">\n                        <i class=\"bi bi-search me-3 fs-4\"></i>\n        Baju\n                    </a>\n                    <a class=\"btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center false\" href=\"/?category_id=4\">\n                        <i class=\"bi bi-search me-3 fs-4\"></i>\n        Elektronik\n                    </a>\n                    <a class=\"btn btn-alt-primary col rounded-4 py-2 px-4 d-inline-flex align-items-center false\" href=\"/?category_id=5\">\n                        <i class=\"bi bi-search me-3 fs-4\"></i>\n        Kesehatan\n                    </a>\n                </nav>\n                <div class=\"row my-5 g-5\" id='products'>\n                    <div class=\"col-12 col-md-4 col-lg-3\">\n                        <a class=\"product-card\" href=\"/products/133515\">\n                            <div class=\"card px-0 border-0 shadow h-100 pb-4 rounded-4\">\n                                <img class=\"card-img img-product-thumbnail p-3 rounded-4 overflow-hidden\" src=\"https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXMzQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2c8171e57df87435c036fa273f6eea5a16867c40/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUFXa0NBQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b50863606d6ba2f597650ed7335384ba20cf4712/galaxy.jpg\" />\n                                <div class=\"card-body text-decoration-none\">\n                                    <h5 class=\"card-title\">coba malfy 8</h5>\n                                    <p class=\"card-text text-black-50 text-small\">Hobi</p>\n                                    <h5 class=\"card-text\">Rp 12</h5>\n                                </div>\n                            </div>\n                        </a>\n                    </div>\n                    <div class=\"col-12 col-md-4 col-lg-3\">\n                        <a class=\"product-card\" href=\"/products/133514\">\n                            <div class=\"card px-0 border-0 shadow h-100 pb-4 rounded-4\">\n                                <img alt=\"Download file\" class=\"card-img img-product-thumbnail p-3 rounded-4 overflow-hidden\" src=\"/placeholder.webp\" />\n                                <div class=\"card-body text-decoration-none\">\n                                    <h5 class=\"card-title\">Stop Kontak</h5>\n                                    <p class=\"card-text text-black-50 text-small\">Elektronik</p>\n                                    <h5 class=\"card-text\">Rp 25.000</h5>\n                                </div>\n                            </div>\n                        </a>\n                    </div>\n                    <div class=\"col-12 col-md-4 col-lg-3\">\n                        <a class=\"product-card\" href=\"/products/133513\">\n                            <div class=\"card px-0 border-0 shadow h-100 pb-4 rounded-4\">\n                                <img class=\"card-img img-product-thumbnail p-3 rounded-4 overflow-hidden\" src=\"https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUUzQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--7db739a53b5d68b1d40aeaca95f5a881f81f108b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUFXa0NBQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--921aa4168288baa76b1e1581eb3aee5dc86a0e6e/pngtree-pita-bendera-merah-putih-or-indonesian-flag-ribbon-png-image_5649204.png\" />\n                                <div class=\"card-body text-decoration-none\">\n                                    <h5 class=\"card-title\">coba malfy 8</h5>\n                                    <p class=\"card-text text-black-50 text-small\">Hobi</p>\n                                    <h5 class=\"card-text\">Rp 12</h5>\n                                </div>\n                            </div>\n                        </a>\n                    </div>\n                    <div class=\"col-12 col-md-4 col-lg-3\">\n                        <a class=\"product-card\" href=\"/products/133512\">\n                            <div class=\"card px-0 border-0 shadow h-100 pb-4 rounded-4\">\n                                <img class=\"card-img img-product-thumbnail p-3 rounded-4 overflow-hidden\" src=\"https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOEkzQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--09cae663fc2980052dbc79908fab044338f73463/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUFXa0NBQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b50863606d6ba2f597650ed7335384ba20cf4712/galaxy.jpg\" />\n                                <div class=\"card-body text-decoration-none\">\n                                    <h5 class=\"card-title\">coba malfy 8</h5>\n                                    <p class=\"card-text text-black-50 text-small\">Kendaraan</p>\n                                    <h5 class=\"card-text\">Rp 12</h5>\n                                </div>\n                            </div>\n                        </a>\n                    </div>\n                    <div class=\"col-12 col-md-4 col-lg-3\">\n                        <a class=\"product-card\" href=\"/products/133511\">\n                            <div class=\"card px-0 border-0 shadow h-100 pb-4 rounded-4\">\n                                <img class=\"card-img img-product-thumbnail p-3 rounded-4 overflow-hidden\" src=\"https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNnczQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a28cbe7d02b5ec20009caaea60ab51b7f5a6e93e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUFXa0NBQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b50863606d6ba2f597650ed7335384ba20cf4712/galaxy.jpg\" />\n                                <div class=\"card-body text-decoration-none\">\n                                    <h5 class=\"card-title\">coba malfy 8</h5>\n                                    <p class=\"card-text text-black-50 text-small\">Hobi</p>\n                                    <h5 class=\"card-text\">Rp 0</h5>\n                                </div>\n                            </div>\n                        </a>\n                    </div>\n                    <div class=\"col-12 col-md-4 col-lg-3\">\n                        <a class=\"product-card\" href=\"/products/133510\">\n                            <div class=\"card px-0 border-0 shadow h-100 pb-4 rounded-4\">\n                                <img class=\"card-img img-product-thumbnail p-3 rounded-4 overflow-hidden\" src=\"https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlUzQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9161237b6d2c9f5f6c1eaac48c35927f4d0b9e3d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUFXa0NBQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b50863606d6ba2f597650ed7335384ba20cf4712/galaxy.jpg\" />\n                                <div class=\"card-body text-decoration-none\">\n                                    <h5 class=\"card-title\">7</h5>\n                                    <p class=\"card-text text-black-50 text-small\">Hobi</p>\n                                    <h5 class=\"card-text\">Rp 100</h5>\n                                </div>\n                            </div>\n                        </a>\n                    </div>\n                    <div class=\"col-12 col-md-4 col-lg-3\">\n                        <a class=\"product-card\" href=\"/products/133507\">\n                            <div class=\"card px-0 border-0 shadow h-100 pb-4 rounded-4\">\n                                <img class=\"card-img img-product-thumbnail p-3 rounded-4 overflow-hidden\" src=\"https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNXMzQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a39e663cede4d1c555391b841d024bbe15445199/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUFXa0NBQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b50863606d6ba2f597650ed7335384ba20cf4712/galaxy.jpg\" />\n                                <div class=\"card-body text-decoration-none\">\n                                    <h5 class=\"card-title\">coba malfy 6</h5>\n                                    <p class=\"card-text text-black-50 text-small\">Hobi</p>\n                                    <h5 class=\"card-text\">Rp 10.000</h5>\n                                </div>\n                            </div>\n                        </a>\n                    </div>\n                    <div class=\"col-12 col-md-4 col-lg-3\">\n                        <a class=\"product-card\" href=\"/products/133506\">\n                            <div class=\"card px-0 border-0 shadow h-100 pb-4 rounded-4\">\n                                <img class=\"card-img img-product-thumbnail p-3 rounded-4 overflow-hidden\" src=\"https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK00zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--bf1f9ceed171757a377dfd9919a75a6fd1dcc7b1/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hSeVpYTnBlbVZmZEc5ZmJHbHRhWFJiQjJrQ0FBRnBBZ0FCIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--81e6deaf02021c69d58a65bb1187ac9e7dcd87c6/stopkontak.jpeg\" />\n                                <div class=\"card-body text-decoration-none\">\n                                    <h5 class=\"card-title\">Stop Kontak</h5>\n                                    <p class=\"card-text text-black-50 text-small\">Elektronik</p>\n                                    <h5 class=\"card-text\">Rp 30.000</h5>\n                                </div>\n                            </div>\n                        </a>\n                    </div>\n                    <div class=\"col-12 col-md-4 col-lg-3\">\n                        <a class=\"product-card\" href=\"/products/133464\">\n                            <div class=\"card px-0 border-0 shadow h-100 pb-4 rounded-4\">\n                                <img class=\"card-img img-product-thumbnail p-3 rounded-4 overflow-hidden\" src=\"https://secondhand.binaracademy.org/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMk0yQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--eded655b5f7e4220a4002291c50e7df712892e4a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hSeVpYTnBlbVZmZEc5ZmJHbHRhWFJiQjJrQ0FBRnBBZ0FCIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--81e6deaf02021c69d58a65bb1187ac9e7dcd87c6/binar.jpeg\" />\n                                <div class=\"card-body text-decoration-none\">\n                                    <h5 class=\"card-title\">Orchid Malevolence</h5>\n                                    <p class=\"card-text text-black-50 text-small\">Hobi</p>\n                                    <h5 class=\"card-text\">Rp 198.767</h5>\n                                </div>\n                            </div>\n                        </a>\n                    </div>\n                    <div class=\"col-12 col-md-4 col-lg-3\">\n                        <a class=\"product-card\" href=\"/products/133463\">\n                            <div class=\"card px-0 border-0 shadow h-100 pb-4 rounded-4\">\n                                <img alt=\"Download file\" class=\"card-img img-product-thumbnail p-3 rounded-4 overflow-hidden\" src=\"/placeholder.webp\" />\n                                <div class=\"card-body text-decoration-none\">\n                                    <h5 class=\"card-title\">Orchid Malevolence</h5>\n                                    <p class=\"card-text text-black-50 text-small\">Hobi</p>\n                                    <h5 class=\"card-text\">Rp 198.767</h5>\n                                </div>\n                            </div>\n                        </a>\n                    </div>\n                    <div role=\"navigation\" aria-label=\"Pagination\" class=\"d-flex gap-4 align-items-center justify-content-center my-5\">\n                        <span class=\"previous_page disabled\" aria-disabled=\"true\">&#8592; Previous</span>\n                        <a class=\"next_page\" rel=\"next\" href=\"/?page=2\">Next &#8594;</a>\n                    </div>\n                </div>\n            </section>\n            <div class=\"sticky-bottom d-flex align-items-center justify-content-center py-4\">\n                <a class=\"btn btn-primary btn-lg rounded-4 d-inline-flex align-items-center justify-content-space-between px-5\" href=\"/products/new\">\n                    <i class=\"bi bi-plus fs-2 me-3\"></i>\n                    <span class=\"fs-6\">Jual</span>\n                </a>\n            </div>\n        </section>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "Update Profile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user[name]",
+							"value": "Binar Web",
+							"type": "text"
+						},
+						{
+							"key": "user[phone_number]",
+							"value": "081213141516",
+							"type": "text"
+						},
+						{
+							"key": "user[address]",
+							"value": "Ciracas",
+							"type": "text"
+						},
+						{
+							"key": "user[city_id]",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "user[avatar]",
+							"type": "file",
+							"src": "postman-cloud:///1ef5637a-890b-42e0-a240-ff718ae308e4"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base.url}}profiles.json",
+					"host": [
+						"{{base.url}}profiles",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Profile",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user[name]",
+									"value": "Binar Web",
+									"type": "text"
+								},
+								{
+									"key": "user[phone_number]",
+									"value": "081213141516",
+									"type": "text"
+								},
+								{
+									"key": "user[address]",
+									"value": "Ciracas",
+									"type": "text"
+								},
+								{
+									"key": "user[city_id]",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "user[avatar]",
+									"type": "file",
+									"src": "postman-cloud:///1ef5637a-890b-42e0-a240-ff718ae308e4"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base.url}}profiles.json",
+							"host": [
+								"{{base.url}}profiles",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 10:13:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"dbc659538a98a126ebef527f6dadc2d0\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=5zg4wRsK3bWYMvu2Xyvk6SQrukrQq9one8uQ1%2FVT9DcP%2B21sdzO1daSpEVdlj5Y7Bys0L23Y6obILXOZZWcshK6tRT3fFO1vcHo7F951lpiwVNcDlMq0t0ZX%2BnbPdrb9jkBVtvIBx4f6MMEf5L90fMoF7f6%2F12mnFE07Kdz3liHQ6VSGMd4AZuuBGJrg5R3GozN9LqMBfQkKJ4yyIUnh1ygYewXsIeH58DEl3nqLE4pQWCI1GTVT3k6XR1JfY5TFAlHGlFL%2Bv%2B2cebFNcyqx%2FyBcjEQyg%2FgSDE%2BjOmQY8suJKThzotK4MozITry76%2ByJ8465iY3NNYbhVDPwFK9g6A%3D%3D--OGzUqhMtkz2xdhgi--xTyMXJEFit1582ZrmasRsg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "20a36246-e0df-4a5b-a6a6-e5f5d74eaa7f"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.887405"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 194196,\n        \"name\": \"Binar Web\",\n        \"email\": \"binar.web@mail.com\",\n        \"phone_number\": \"081213141516\",\n        \"address\": \"Ciracas\",\n        \"city\": {\n            \"id\": 3,\n            \"name\": \"Jakarta\"\n        },\n        \"avatar\": {\n            \"filename\": \"images.jpeg\",\n            \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNW8zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--964caac4c31a532d13c500847226a6b5d7236d8d/images.jpeg\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base.url}}profiles.json",
+					"host": [
+						"{{base.url}}profiles",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Profile",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base.url}}profiles.json",
+							"host": [
+								"{{base.url}}profiles",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Aug 2024 10:13:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"dbc659538a98a126ebef527f6dadc2d0\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_binar_playground_secondhand_marketplace_session=lP00JAmB2MS%2F7SLJBLlFkNcjz%2Bwq3uTEWmrA5wHejZgC%2FMh%2B7DG4%2Bqvj9LKAKUlTBzvJwJ%2BkjhF39hU%2BTS6qlCEqFjIRmYSofdjc0GeXKF1%2BeZCJqLje88k6H4BObX56nHAXWxPNMmOUOWCNqmq7RcbfZ%2BNticSEd3xRhmCJ%2B8j9ehkdroym1%2BKAfoDfDQ5uXE5%2B86RILniuqkGj5aCMJyldbUiazHcgb3Rs9eB03sddcu15pue1teF3PHvjKDyRvP%2BDSLeZNxPZnMv2WdvY0yLp9zEvVJk%2BZSaKM8H26HYbuGpfu8VoZ2VtybbP6TyOorzzAZfPIG4ya9pk8p39RQ%3D%3D--wVlJD7qFut9M0FL7--7mcuONZ2Yw6vPV3kw8K6yw%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "75a83ee1-2538-49a9-a43e-6a66f7383adb"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.014069"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 194196,\n        \"name\": \"Binar Web\",\n        \"email\": \"binar.web@mail.com\",\n        \"phone_number\": \"081213141516\",\n        \"address\": \"Ciracas\",\n        \"city\": {\n            \"id\": 3,\n            \"name\": \"Jakarta\"\n        },\n        \"avatar\": {\n            \"filename\": \"images.jpeg\",\n            \"url\": \"/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNW8zQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--964caac4c31a532d13c500847226a6b5d7236d8d/images.jpeg\"\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}

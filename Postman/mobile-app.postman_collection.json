@@ -1,0 +1,417 @@
+{
+	"info": {
+		"_postman_id": "2fce3bd0-10f6-4b3a-b476-f9798712e249",
+		"name": "mobile-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37201936"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name",
+							"value": "",
+							"description": "Full Name",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"description": "Email",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"description": "Password",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "",
+							"description": "Phone Number",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "",
+							"description": "Address",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"description": "format jpg/png\n\n",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "city",
+							"value": "",
+							"description": "Location/City",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}auth/register",
+					"host": [
+						"{{base_url}}auth"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"putri123@mail.com\",\r\n  \"password\": \"putri123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}auth/login",
+					"host": [
+						"{{base_url}}auth"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1dHJpMTIzQG1haWwuY29tIiwiaWF0IjoxNzIyMjI1ODQ3fQ.SPo9SAJRXVwGq4YaPYjZLvMlxcRmYMcRnh4LXlwNkkY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Buku Dongeng",
+							"description": "Nama Produk Anda",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Buku Bacaan Anak",
+							"description": "Deskripsi Produk Anda\t",
+							"type": "text"
+						},
+						{
+							"key": "base_price",
+							"value": "50000",
+							"description": "Harga Dasar Produk",
+							"type": "text"
+						},
+						{
+							"key": "category_ids",
+							"value": "5",
+							"description": "[1, 2, 3] (contoh)",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Ciputat",
+							"description": "Lokasi",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"description": "Pilih file gambar (jpg/png)",
+							"type": "file",
+							"src": "postman-cloud:///1ef4cfc5-dc86-4b20-b7bf-8ce9eb9b3bac"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}seller/product",
+					"host": [
+						"{{base_url}}seller"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1dHJpMTIzQG1haWwuY29tIiwiaWF0IjoxNzIyMjI3NTEyfQ.1Br_8WTNhHiz35cjbbMcJQp9FJ9wYs9NRF2RSl35cKI",
+						"description": "access_token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}seller/product",
+					"host": [
+						"{{base_url}}seller"
+					],
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Product (id)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1dHJpMTIzQG1haWwuY29tIiwiaWF0IjoxNzIyMjI4OTQ4fQ.3ZaPr4V0qjCmkE-nlx2XDCC0atvnnTJUPXzoQJRXbIA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}seller/product/125346",
+					"host": [
+						"{{base_url}}seller"
+					],
+					"path": [
+						"product",
+						"125346"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seller Product (id)",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1dHJpMTIzQG1haWwuY29tIiwiaWF0IjoxNzIyMjI4OTQ4fQ.3ZaPr4V0qjCmkE-nlx2XDCC0atvnnTJUPXzoQJRXbIA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}seller/product/125345",
+					"host": [
+						"{{base_url}}seller"
+					],
+					"path": [
+						"product",
+						"125345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buyer Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}buyer/product?status=available&category_id=5&search=Buku&page=1&per_page=10",
+					"host": [
+						"{{base_url}}buyer"
+					],
+					"path": [
+						"product"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "available",
+							"description": "Status produk"
+						},
+						{
+							"key": "category_id",
+							"value": "5",
+							"description": "ID kategori"
+						},
+						{
+							"key": "search",
+							"value": "Buku",
+							"description": "Kata kunci pencarian"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Halaman"
+						},
+						{
+							"key": "per_page",
+							"value": "10",
+							"description": "Jumlah item per halaman"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buyer Product (id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}buyer/product/5",
+					"host": [
+						"{{base_url}}buyer"
+					],
+					"path": [
+						"product",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buyer Order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1dHJpMTIzQG1haWwuY29tIiwiaWF0IjoxNzIyMjI4OTQ4fQ.3ZaPr4V0qjCmkE-nlx2XDCC0atvnnTJUPXzoQJRXbIA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product_id\": 110490,\r\n  \"bid_price\": 50000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}buyer/order",
+					"host": [
+						"{{base_url}}buyer"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buyer Order",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1dHJpMTIzQG1haWwuY29tIiwiaWF0IjoxNzIyMjI4OTQ4fQ.3ZaPr4V0qjCmkE-nlx2XDCC0atvnnTJUPXzoQJRXbIA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}buyer/order",
+					"host": [
+						"{{base_url}}buyer"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buyer Order (id)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1dHJpMTIzQG1haWwuY29tIiwiaWF0IjoxNzIyMjI4OTQ4fQ.3ZaPr4V0qjCmkE-nlx2XDCC0atvnnTJUPXzoQJRXbIA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}buyer/order/65061",
+					"host": [
+						"{{base_url}}buyer"
+					],
+					"path": [
+						"order",
+						"65061"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buyer Order (id)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "access_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InB1dHJpMTIzQG1haWwuY29tIiwiaWF0IjoxNzIyMjI4OTQ4fQ.3ZaPr4V0qjCmkE-nlx2XDCC0atvnnTJUPXzoQJRXbIA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bid_price\": 50000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}buyer/order/65061",
+					"host": [
+						"{{base_url}}buyer"
+					],
+					"path": [
+						"order",
+						"65061"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
