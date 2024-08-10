@@ -1,4 +1,4 @@
-Link Challenge x
+Link Challenge
 
 1. Test scenario dan test case: https://docs.google.com/spreadsheets/d/1m3OghL4RNUoG8txb5czfgnrlVI941dV9/edit?usp=drive_link&ouid=104906891167770852627&rtpof=true&sd=true
 2. Bug Report
